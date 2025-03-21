@@ -1,10 +1,38 @@
 <html>
     <style>
-
+        body{
+            background-image: url("./Background.png");
+            background-size: cover;
+            background-color: rgba(255,255,255,0.6);
+            background-blend-mode: lighten;
+        }
+        .instruction img{
+            width: 695px;
+            height: 150px;
+        }
+        .table{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     </style>
     <body>
         <h1><a href="enter_os.html">Enter OS</a></h1>
         <h2>Download</h2>
-        <h3><a href="./Scripts.zip">Enter OS (1.2)</a></h3>
+        <h3><a href="./OS.zip">Enter OS (1.2)</a></h3>
+        <h1>Instruction:</h1>
+        <div class="table">
+            <div>
+                <ul>
+                    <li><h1>Download</h1><span class="instruction"><img src="./StepOne.png"></span></li>
+                    <li><h1>Open ZIP</h1><span class="instruction"><img src="./StepTwo.png"></span></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h1>Download python</h1><span class="instruction"><img src="./StepThree.png"></span></li>
+                    <li><h1>Run marked script & open .txt file</h1><span class="instruction"><img src="./StepFour.png"></span></li>
+                </ul>
+            </div>
+        </div>
     </body> 
 </html>
