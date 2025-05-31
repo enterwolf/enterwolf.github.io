@@ -1,0 +1,112 @@
+<html>
+    <style>
+        body{
+            background-image: url("./Background.png");
+            background-size: cover;
+            background-color: rgba(255,255,255,0.6);
+            background-blend-mode: lighten;
+        }
+        .maintext {
+            font-family: fantasy;
+            font-size: 70px;
+        }
+        .slogan {
+            font-family: Verdana;
+        }
+    </style>
+    <script type="text/javascript">
+        let myvar = 0;
+
+        function easy_obby() {
+            myvar += 5;
+            updateLabel();
+        }
+
+        function tycoon() {
+            myvar += 15;
+            updateLabel();
+        }
+
+        function GuiGame() {
+            myvar += 15;
+            updateLabel();
+        }
+
+        function Reset() {
+            myvar = 0;
+            updateLabel();
+        }
+
+        function AntiCheat() {
+            myvar += 10;
+            updateLabel();
+        }
+
+        function PhoneAdaptation() {
+            myvar += 10;
+            updateLabel();
+        }
+
+        function Plot() {
+            myvar += 15;
+            updateLabel();
+        }
+
+        function updateLabel() {
+            document.getElementById('myvar_label').innerText = 'Total Robux: ' + myvar;
+        }
+
+        document.addEventListener('DOMContentLoaded', (_) => {
+            updateLabel();
+            document.getElementById('mybtn').addEventListener('click', (_) => easy_obby());
+        })
+
+        document.addEventListener('DOMContentLoaded', (_) => {
+            updateLabel();
+            document.getElementById('mybtn2').addEventListener('click', (_) => tycoon());
+        })
+
+        document.addEventListener('DOMContentLoaded', (_) => {
+            updateLabel();
+            document.getElementById('mybtn3').addEventListener('click', (_) => Reset());
+        })
+
+        document.addEventListener('DOMContentLoaded', (_) => {
+            updateLabel();
+            document.getElementById('mybtn4').addEventListener('click', (_) => AntiCheat());
+        })
+
+        document.addEventListener('DOMContentLoaded', (_) => {
+            updateLabel();
+            document.getElementById('mybtn5').addEventListener('click', (_) => PhoneAdaptation());
+        })
+
+        document.addEventListener('DOMContentLoaded', (_) => {
+            updateLabel();
+            document.getElementById('mybtn6').addEventListener('click', (_) => GuiGame());
+        })
+
+        document.addEventListener('DOMContentLoaded', (_) => {
+            updateLabel();
+            document.getElementById('mybtn7').addEventListener('click', (_) => Plot());
+        })
+    </script>
+
+    <body>
+        <a href="index.html"><h1><span class="maintext">EnterGames</span><span class="slogan"> - Forward, to the future</span></h1></a>
+        <h2 class="slogan">Have you ever wondered how to get a lot of robux periodicly?</h2>
+        <h3 class="slogan">The fastest way is getting robux from your own games</h3>
+        <h3 class="slogan">And we can help you! With paying small amount of robux you get a chance to get a lot</h3>
+        <h3 class="slogan">We have prices and good qality!</h3>
+        <button type="button" id="mybtn">Easy Obby With Checkpoints</button>
+        <button type="button" id="mybtn2">Tycoon</button>
+        <button type="button" id="mybtn6">GUI Game</button>
+        <button type="button" id="mybtn3">Reset</button>
+        <div id="myvar_label"></div>
+        <h3>Additions:</h3>
+        <button type="button" id="mybtn4">AntiCheat</button>
+        <button type="button" id="mybtn5">Phone Adaptation</button>
+        <button type="button" id="mybtn7">Plot</button>
+        <h3 class="slogan"><a href="https://t.me/EnterGamesManagerBot">Write here to order</a></h3>
+    </body>
+</html>
